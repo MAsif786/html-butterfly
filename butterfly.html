@@ -1,0 +1,234 @@
+
+<html>
+<head>
+<style>
+
+*{
+margin:0;
+
+}
+
+body{
+background-color:hotpink;
+}
+
+#butterfly{
+
+    -webkit-animation: walk 3s infinite ease;
+    -moz-animation:  walk 3s infinite ease;
+    -o-animation:  walk 3s infinite ease;
+
+
+
+
+width:45%;
+position:absolute;
+right:400px;
+top:150px;
+}
+
+    @-moz-keyframes walk {
+    0%   {left:0px; top:0px;  transform:scale(0.4) skew(35deg) ;
+-moz-transform:scale(0.4) skew(35deg) ;}
+    25%  { left:200px; top:0px;  transform:scale(0.4) skew(35deg) ;
+-moz-transform:scale(0.4) skew(35deg) ;}
+    50%  {left:200px; top:200px;  transform:scale(0.4) skew(35deg) ;
+-moz-transform:scale(0.4) skew(35deg) ;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px; transform:scale(0.4) skew(-35deg) ;
+-moz-transform:scale(0.4) skew(-35deg) ;}
+    }
+
+@-keyframes walk {
+    0%   {left:0px; top:0px; transform:scale(0.4) skew(-35deg) ;
+-moz-transform:scale(0.4) skew(-35deg) ;}
+    25%  { left:200px; top:0px;  transform:scale(0.4) skew(35deg) ;
+-moz-transform:scale(0.4) skew(35deg) ;}
+    50%  {left:200px; top:200px;  transform:scale(0.4) skew(35deg) ;
+-moz-transform:scale(0.4) skew(35deg) ;}
+    75%  {left:0px; top:200px; transform:scale(0.4) skew(35deg) ;
+-moz-transform:scale(0.4) skew(35deg) ;}
+    100% {left:0px; top:0px; transform:scale(0.4) skew(-35deg) ;
+-moz-transform:scale(0.4) skew(-35deg) ;}
+    }
+
+.main{
+
+width:545px;
+height:190px;
+background-color:balck;
+
+}
+
+.m2{
+margin-top:3px;
+}
+
+#nose{
+width:545px;
+
+height:140px;
+}
+
+.n{
+margin-left:12px;
+float:left;
+height:140px;
+width:245px;
+border-right:5px solid black;
+border-radius:0px 80px 0 0;
+text-align:right;
+font-size:30px;
+}
+
+
+.n spam{
+margin-right:50px;
+background-color:black;
+border-radius:100px;
+}
+
+.nr spam{
+margin-left:50px;
+background-color:black;
+border-radius:100px;
+}
+
+.nr{
+text-align:left;
+border-radius:80px 0px 0 0;
+border-right:0px solid black;
+border-left:5px solid black;
+}
+
+.center{
+border:2.5px solid black;
+text-align:center;
+font-size:30px;
+color:white;
+margin:0;
+height:50px;
+float:left;
+width:55px;
+background-color:black;
+border-radius:100px;
+padding:0px;
+}
+
+.cb{
+color:black;
+margin-top:-120px;
+height:225px;
+font-size:25px;
+}
+
+    .wing {
+
+
+    -webkit-animation: cssAnimation 0.4s infinite ease;
+    -moz-animation: cssAnimation 0.4s infinite  ease;
+    -o-animation: cssAnimation 0.4s 20 ease;
+  
+border:2px solid black;
+color:red;
+text-align:center;
+height:195px;
+width:235px;
+background-color:skyblue;
+opacity:.7;
+border-radius:0px 100px 0px 100px;
+float:left;
+}
+
+.left{
+
+
+}
+
+
+
+    @-webkit-keyframes cssAnimation {
+    0% { -moz-transform: rotatey(0deg)   }
+	50% { -moz-transform: rotatey(35deg)   }
+   100% { -moz-transform: rotatey(20deg)   }
+    }
+    @-moz-keyframes cssAnimation {
+    0% { -moz-transform: rotatey(0deg)   }
+	50% { -moz-transform: rotatey(35deg)   }
+   100% { -moz-transform: rotatey(20deg)   }
+    }
+    @-o-keyframes cssAnimation {
+    0% { -moz-transform: rotatey(0deg)   }
+	50% { -moz-transform: rotatey(35deg)   }
+   100% { -moz-transform: rotatey(20deg)   }
+    }
+
+.wing spam{
+font-size:45px;
+color:skyblue;
+background-color:black;
+border-radius:0px 100px 0px 100px;
+} 
+
+.r{
+border-radius:100px 0px 100px 0;
+}
+
+.r spam{
+border-radius:100px 0px 100px 0;
+}
+
+.bl{width:230px;
+height:180px;
+border-radius:100px 0px 100px 0;
+margin-left:5px;
+}
+
+.br{
+width:230px;
+height:180px;
+}
+
+
+.bl spam{
+border-radius:100px 0px 100px 0;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div id="butterfly">
+<div id="nose">
+<div class="n nl"><spam>@</spam></div>
+<div class="n nr"><spam>@</spam></div>
+</div>
+
+<div class="main">
+
+<div class="wing l"><br/><br/><br/><spam>~ ~<spam></div>
+<div class="center"><spam>o o</spam></div>
+<div class="wing r"><br/><br/><br/><spam>~ ~<spam></div>
+
+</div>
+
+
+
+<div class="main m2">
+
+<div class="wing bl"><br/><br/><br/><spam>~ ~<spam></div>
+<div class="center cb"><br/><spam>-</spam><br/><spam>-</spam><br/><spam>-</spam><br/><br/><br/><spam>* *</spam></div>
+<div class="wing br"><br/><br/><br/><spam>~ ~<spam></div>
+
+
+</div>
+
+</div>
+
+
+
+
+</body>
+<html>
