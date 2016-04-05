@@ -14,42 +14,38 @@ background-color:hotpink;
 
 #butterfly{
 
-    -webkit-animation: walk 3s infinite ease;
-    -moz-animation:  walk 3s infinite ease;
-    -o-animation:  walk 3s infinite ease;
+    -webkit-animation: walk 9s infinite ease;
+    -moz-animation:  walk 9s infinite ease;
+    -o-animation:  walk 9s infinite ease;
 
-
-
-
-width:45%;
+width:auto;
 position:absolute;
-right:400px;
-top:150px;
 }
 
     @-moz-keyframes walk {
-    0%   {left:0px; top:0px;  transform:scale(0.4) skew(35deg) ;
--moz-transform:scale(0.4) skew(35deg) ;}
-    25%  { left:200px; top:0px;  transform:scale(0.4) skew(35deg) ;
--moz-transform:scale(0.4) skew(35deg) ;}
-    50%  {left:200px; top:200px;  transform:scale(0.4) skew(35deg) ;
--moz-transform:scale(0.4) skew(35deg) ;}
-    75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px; transform:scale(0.4) skew(-35deg) ;
--moz-transform:scale(0.4) skew(-35deg) ;}
+    0%   {left:0px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+-moz-transform:scale(0.3) skew(-35deg) ;}
+    25%  { left:230px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+-moz-transform:scale(0.3) skew(-35deg) ;}
+    50%  {left:500px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+-moz-transform:scale(0.3) skew(-35deg) ;}
+    75%  {left:500px; top:200px; transform:scale(0.3) skew(35deg) ;
+-moz-transform:scale(0.3) skew(35deg) ;}
+    100% {left:0; top:0px; bottom:50px; transform:scale(0.3) skew(35deg) ;
+-moz-transform:scale(0.3) skew(35deg) ;}
     }
 
 @-keyframes walk {
-    0%   {left:0px; top:0px; transform:scale(0.4) skew(-35deg) ;
--moz-transform:scale(0.4) skew(-35deg) ;}
-    25%  { left:200px; top:0px;  transform:scale(0.4) skew(35deg) ;
--moz-transform:scale(0.4) skew(35deg) ;}
-    50%  {left:200px; top:200px;  transform:scale(0.4) skew(35deg) ;
--moz-transform:scale(0.4) skew(35deg) ;}
-    75%  {left:0px; top:200px; transform:scale(0.4) skew(35deg) ;
--moz-transform:scale(0.4) skew(35deg) ;}
-    100% {left:0px; top:0px; transform:scale(0.4) skew(-35deg) ;
--moz-transform:scale(0.4) skew(-35deg) ;}
+    0%   {left:0px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+-moz-transform:scale(0.3) skew(-35deg) ;}
+    25%  { left:230px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+-moz-transform:scale(0.3) skew(-35deg) ;}
+    50%  {left:500px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+-moz-transform:scale(0.3) skew(-35deg) ;}
+    75%  {left:500px; top:200px; transform:scale(0.3) skew(35deg) ;
+-moz-transform:scale(0.3) skew(35deg) ;}
+    100% {left:0; top:0px; bottom:50px; transform:scale(0.3) skew(35deg) ;
+-moz-transform:scale(0.3) skew(35deg) ;}
     }
 
 .main{
@@ -124,11 +120,6 @@ font-size:25px;
 
     .wing {
 
-
-    -webkit-animation: cssAnimation 0.4s infinite ease;
-    -moz-animation: cssAnimation 0.4s infinite  ease;
-    -o-animation: cssAnimation 0.4s 20 ease;
-  
 border:2px solid black;
 color:red;
 text-align:center;
@@ -140,29 +131,60 @@ border-radius:0px 100px 0px 100px;
 float:left;
 }
 
-.left{
+#left{
 
+    -webkit-animation: leftw .5s infinite ease;
+    -moz-animation: leftw .5s infinite  ease;
+    -o-animation: leftw .5s infinite ease;
 
 }
 
 
 
-    @-webkit-keyframes cssAnimation {
+    @-webkit-keyframes leftw {
     0% { -moz-transform: rotatey(0deg)   }
-	50% { -moz-transform: rotatey(35deg)   }
-   100% { -moz-transform: rotatey(20deg)   }
+	50% { -moz-transform: rotatey(45deg)   }
+   100% { -moz-transform: rotatey(30deg)   }
+    } 
+    @-moz-keyframes leftw {
+    0% { -moz-transform: rotatey(0deg)   }
+	50% { -moz-transform: rotatey(45deg)   }
+   100% { -moz-transform: rotatey(30deg)   }
     }
-    @-moz-keyframes cssAnimation {
+    @-o-keyframes leftw {
     0% { -moz-transform: rotatey(0deg)   }
-	50% { -moz-transform: rotatey(35deg)   }
-   100% { -moz-transform: rotatey(20deg)   }
-    }
-    @-o-keyframes cssAnimation {
-    0% { -moz-transform: rotatey(0deg)   }
-	50% { -moz-transform: rotatey(35deg)   }
-   100% { -moz-transform: rotatey(20deg)   }
+	50% { -moz-transform: rotatey(45deg)   }
+   100% { -moz-transform: rotatey(30deg)   }
     }
 
+	
+	#right{
+    -webkit-animation: rightw .5s infinite ease;
+    -moz-animation: rightw  .5s infinite  ease;
+    -o-animation: rightw  .5s infinite ease;
+
+}
+
+
+
+    @-webkit-keyframes rightw {
+    0% { -moz-transform: rotatey(0deg)   }
+	50% { -moz-transform: rotatey(-45deg)   }
+   100% { -moz-transform: rotatey(-30deg)   }
+    }
+    @-moz-keyframes rightw {
+    0% { -moz-transform: rotatey(0deg)   }
+	50% { -moz-transform: rotatey(-45deg)   }
+   100% { -moz-transform: rotatey(-30deg)   }
+    }
+    @-o-keyframes rightw {
+    0% { -moz-transform: rotatey(0deg)   }
+	50% { -moz-transform: rotatey(-45deg)   }
+   100% { -moz-transform: rotatey(-30deg)   }
+    }
+	
+	
+	
 .wing spam{
 font-size:45px;
 color:skyblue;
@@ -208,9 +230,9 @@ border-radius:100px 0px 100px 0;
 
 <div class="main">
 
-<div class="wing l"><br/><br/><br/><spam>~ ~<spam></div>
+<div class="wing l" id="left"><br/><br/><br/><spam>~ ~<spam></div>
 <div class="center"><spam>o o</spam></div>
-<div class="wing r"><br/><br/><br/><spam>~ ~<spam></div>
+<div class="wing r" id="right"><br/><br/><br/><spam>~ ~<spam></div>
 
 </div>
 
@@ -218,9 +240,9 @@ border-radius:100px 0px 100px 0;
 
 <div class="main m2">
 
-<div class="wing bl"><br/><br/><br/><spam>~ ~<spam></div>
+<div class="wing bl" id="left"><br/><br/><br/><spam>~ ~<spam></div>
 <div class="center cb"><br/><spam>-</spam><br/><spam>-</spam><br/><spam>-</spam><br/><br/><br/><spam>* *</spam></div>
-<div class="wing br"><br/><br/><br/><spam>~ ~<spam></div>
+<div class="wing br" id="right"><br/><br/><br/><spam>~ ~<spam></div>
 
 
 </div>
