@@ -19,11 +19,10 @@ height:100%;
    -webkit-animation: walk 9s infinite ease;
     -moz-animation:  walk 9s infinite ease;
     -o-animation:  walk 9s infinite ease;
-
+background-color:;
 width:550px;
     position: absolute;
-    left: 100px;
-    top: 100px;
+
     transform: rotateX(90deg);
     transform-style: preserve-3d;
     overflow: visible;
@@ -53,20 +52,22 @@ width:550px;
 -webkit-transform:scale(0.3) skew(35deg) ;}
     100% {left:0; top:0px; bottom:50px; transform:scale(0.3) skew(35deg) ;
 -webkit-transform:scale(0.3) skew(35deg) ;}
-    }
+    } 
 
   
   @-moz-keyframes walk {
-    0%   {left:0; top:0px;  transform:scale(0.3) skew(-35deg) ;
+    0%   {left:-250; top:-350px;
 -moz-transform:scale(0.3) skew(-35deg) ;}
-    25%  { left:230px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+    30% {left:350; top:40px; 
 -moz-transform:scale(0.3) skew(-35deg) ;}
-    50%  {left:500px; top:0px;  transform:scale(0.3) skew(-35deg) ;
+    40% {left:350; top:40px; 
+-moz-transform:scale(0.3) skew(-15deg) ;}
+    70% {left:350; top:40px; 
+-moz-transform:scale(0.3) skew(5deg) ;}
+    80% {
+-moz-transform:scale(0.3) skew(-20deg) ;}
+    100% {left:850px; top:-350px; 
 -moz-transform:scale(0.3) skew(-35deg) ;}
-    75%  {left:500px; top:200px; transform:scale(0.3) skew(35deg) ;
--moz-transform:scale(0.3) skew(35deg) ;}
-    100% {left:0; top:0px; bottom:50px; transform:scale(0.3) skew(35deg) ;
--moz-transform:scale(0.3) skew(35deg) ;}
     }
 
 @-keyframes walk {
@@ -252,12 +253,20 @@ border-radius:45px  150px  35px 150px;
 border-radius:150px 35px 150px 35px;
 }
 
-
+#fotter{
+width:100%;
+position:absolute;
+bottom:0;
+right:0;
+background-color:green;
+height:30%;
+}
 
 
 </style>
 </head>
 <body>
+
 <div id="butterfly">
 <div id="nose">
 <div class="n nl"><spam>@</spam></div>
@@ -285,10 +294,14 @@ border-radius:150px 35px 150px 35px;
 
 </div>
 
+<div id="fotter">
+
+<marquee behavior="alternate" style="font-size:50px;" >
+I am Butterfly
+</marquee>
 
 
-
-
+</div>
 
 
 
