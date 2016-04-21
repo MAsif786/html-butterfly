@@ -1,6 +1,16 @@
 
+
 <html>
 <head>
+
+
+
+<script src="vendor/prefixfree.min.js"></script>
+
+<style>
+
+
+
 <style>
 
 *{
@@ -9,95 +19,104 @@ margin:0;
 }
 
 body{   
+	    background: rgb(30,87,153); /* Old browsers */
+    background: linear-gradient(to bottom, rgba(67,107,153,1) 0%,rgba(139,173,201,1) 47%,rgba(252,252,252,1) 66%,rgba(178,224,177,1) 69%,rgba(90,122,86,1) 100%);
+    height: 100%;
+    perspective: 800px;
+	-webkit-perspective: 800px;
     transform-origin: center center;
-width:100%;
-height:100%;
+
+}
+ 
+.butterfly{
+
+
+   position:absolute ;
+    left: 0px;
+    top: 0px;
+
 }
 
-#butterfly{
-
-   -webkit-animation: walk 9s infinite ease;
-    -moz-animation:  walk 9s infinite ease;
-    -o-animation:  walk 9s infinite ease;
-background-color:;
-width:550px;
-    position: absolute;
-
-    transform: rotateX(90deg);
+ .hover-container {
+     animation: walk 3s linear infinite alternate;    
+	-webkit-animation: walk 3s linear infinite alternate;
+ 
+ 	    transform:rotateX(-80deg)  scale(0.3);
+	-webkit-transform:rotateX(-80deg)  scale(0.3);
+	
     transform-style: preserve-3d;
-    overflow: visible;
-}
+    -webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+    position: relative;
 
-      @-o-keyframes walk {
-    0%   {left:0px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--o-transform:scale(0.3) skew(-35deg) ;}
-    25%  { left:230px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--o-transform:scale(0.3) skew(-35deg) ;}
-    50%  {left:500px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--o-tranosform:scale(0.3) skew(-35deg) ;}
-    75%  {left:500px; top:200px; transform:scale(0.3) skew(35deg) ;
--o-transform:scale(0.3) skew(35deg) ;}
-    100% {left:0; top:0px; bottom:50px; transform:scale(0.3) skew(35deg) ;
--o-transform:scale(0.3) skew(35deg) ;}
-    }     
+	top:0; left:-100px;
+	
+	
+}
 
 	@-webkit-keyframes walk {
-    0%   {left:0px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--webkit-transform:scale(0.3) skew(-35deg) ;}
-    25%  { left:230px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--webkit-transform:scale(0.3) skew(-35deg) ;}
-    50%  {left:500px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--webkit-transform:scale(0.3) skew(-35deg) ;}
-    75%  {left:500px; top:200px; transform:scale(0.3) skew(35deg) ;
--webkit-transform:scale(0.3) skew(35deg) ;}
-    100% {left:0; top:0px; bottom:50px; transform:scale(0.3) skew(35deg) ;
--webkit-transform:scale(0.3) skew(35deg) ;}
-    } 
-
-  
-  @-moz-keyframes walk {
-    0%   {left:-250; top:-350px;
--moz-transform:scale(0.3) skew(-35deg) ;}
-    30% {left:350; top:40px; 
--moz-transform:scale(0.3) skew(-35deg) ;}
-    40% {left:350; top:40px; 
--moz-transform:scale(0.3) skew(-15deg) ;}
-    70% {left:350; top:40px; 
--moz-transform:scale(0.3) skew(5deg) ;}
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    10% {
+        margin-top: 11px;
+        margin-left: -4px;
+    }
+    20% {
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+    30% {
+        margin-top: 23px;
+        margin-left: -4px;
+    }
+    40% {
+        margin-top: 3px;
+        margin-left: -14px;
+    }
+    50% {
+        margin-top: -6px;
+        margin-left: 4px;
+    }
+    60% {
+        margin-top: -18px;
+        margin-left: 26px;
+    }
+    70% {
+        margin-top: -13px;
+        margin-left: 10px;
+    }
     80% {
--moz-transform:scale(0.3) skew(-20deg) ;}
-    100% {left:850px; top:-350px; 
--moz-transform:scale(0.3) skew(-35deg) ;}
+        margin-top: 1px;
+        margin-left: 15px;
+    }
+    90% {
+        margin-top: 6px;
+        margin-left: 2px;
+    }
+    100% {
+        margin-top: 12px;
+        margin-left: -4px;
     }
 
-@-keyframes walk {
-    0%   {left:0px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--moz-transform:scale(0.3) skew(-35deg) ;}
-    25%  { left:230px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--moz-transform:scale(0.3) skew(-35deg) ;}
-    50%  {left:500px; top:0px;  transform:scale(0.3) skew(-35deg) ;
--moz-transform:scale(0.3) skew(-35deg) ;}
-    75%  {left:500px; top:200px; transform:scale(0.3) skew(35deg) ;
--moz-transform:scale(0.3) skew(35deg) ;}
-    100% {left:0; top:0px; bottom:50px; transform:scale(0.3) skew(35deg) ;
--moz-transform:scale(0.3) skew(35deg) ;}
-    }
+}
+  
 
 .main{
 
-width:545px;
-height:190px;
+width:auto;
+height:auto;
 background-color:balck;
 
 }
 
 .m2{
-margin-top:3px;
+margin-top:-10px;
 }
 
 #nose{
 width:545px;
-
 height:140px;
 }
 
@@ -137,20 +156,23 @@ border:2.5px solid black;
 text-align:center;
 font-size:30px;
 color:white;
-margin:0 3px 0 3px;
+margin:0px -5px ;
 height:50px;
 float:left;
 width:55px;
 background-color:black;
 border-radius:100px;
 padding:0px;
+overflow: visible;
 }
 
 .cb{
+margin:0 ;
 color:black;
-margin-top:-106px;
-height:225px;
-font-size:25px;
+margin-top:-110px;
+width:40px;
+height:260px;
+
 }
 
     .wing {
@@ -158,65 +180,72 @@ font-size:25px;
 border:2px solid black;
 color:red;
 text-align:center;
-height:195px;
+height:220px;
 width:235px;
-background-color:skyblue;
-
-border-radius:35px 150px 35px 150px;
+background-color:coral;
+border-radius: 50% 177%;
 float:left;
 }
 
 #left{
-
-    -webkit-animation: leftw .5s infinite ease;
-    -moz-animation: leftw .5s infinite  ease;
-    -o-animation: leftw .5s infinite ease;
-
+transform-origin: right center;
+    -webkit-animation: leftw 0.4s linear infinite alternate;
+	animation: leftw 0.4s linear infinite alternate;
+	
+     transform-style: preserve-3d;
+	 -webkit-transform-style: preserve-3d;
 }
 
 
 
     @-webkit-keyframes leftw {
-    0% { -webkit-transform: skewy(0deg)   }
-	50% { -webkit-transform: skewy(15deg)   }
-   100% { -webkit-transform: skewy(5deg)   }
-    } 
-    @-moz-keyframes leftw {
-    0% { -moz-transform: skewy(0deg)   }
-	50% { -moz-transform: skewy(15deg)   }
-   100% { -moz-transform: skewy(5deg)   }
+    0% {
+        -webkit-transform: rotateY(-60deg);
     }
-    @-o-keyframes leftw {
-    0% { -o-transform: skewy(0deg)   }
-	50% { -o-transform: skewy(15deg)   }
-   100% { -o-transform: skewy(5deg)   }
+    100% {
+        -webkit-transform: rotateY(60deg);
     }
+}
 
+	@keyframes leftw {
+    0% {
+        transform: rotateY(-60deg);
+    }
+    100% {
+        transform: rotateY(60deg);
+    }
+}
+    
+  
 	
 	#right{
-    -webkit-animation: rightw .5s infinite ease;
-    -moz-animation: rightw  .5s infinite  ease;
-    -o-animation: rightw  .5s infinite ease;
+	transform-origin: left center;
+    -webkit-animation: rightw 0.4s linear infinite alternate;
+	     transform-style: preserve-3d;
+	 -webkit-transform-style: preserve-3d;
 
 }
 
 
 
     @-webkit-keyframes rightw {
-    0% { -webkit-transform: skewy(0deg)   }
-	50% { -webkit-transform: skewy(-15deg)   }
-   100% { -webkit-transform: skewy(5deg)   }
+    0% {
+        -webkit-transform: rotateY(60deg);
     }
-    @-moz-keyframes rightw {
-    0% { -moz-transform: skewy(0deg)   }
-	50% { -moz-transform: skewy(-15deg)   }
-   100% { -moz-transform: skewy(5deg)   }
+    100% {
+        -webkit-transform: rotateY(-60deg);
     }
-    @-o-keyframes rightw {
-    0% { -o-transform: skewy(0deg)   }
-	50% { -o-transform: skewy(-15deg)   }
-   100% { -o-transform: skewy(5deg)   }
     }
+	    @keyframes rightw {
+    0% {
+        transform: rotateY(60deg);
+    }
+    100% {
+        transform: rotateY(-60deg);
+    }
+    }
+	
+	
 	
 	
 	
@@ -228,46 +257,66 @@ border-radius:35px 150px 35px 150px;
 } 
 
 .r{
-border-radius:150px 35px  150px 35px;
+border-radius: 150px 35px 150px 35px ;
 }
 
 .r spam{
-border-radius:150px 35px  150px 35px;
+border-radius: 150px 35px 150px 35px ;
 }
 
 .bl{width:230px;
 height:180px;
-border-radius:150px 35px 150px 35px;
+border-radius: 150px 35px 150px 35px;
 margin-left:5px;
 }
 
 .br{
 width:230px;
 height:180px;
-border-radius:45px  150px  35px 150px;
+border-radius:35px 150px 35px 150px;
 
 }
 
 
 .bl spam{
-border-radius:150px 35px 150px 35px;
+border-radius:35px 150px 35px 150px;
 }
 
-#fotter{
-width:100%;
-position:absolute;
-bottom:0;
-right:0;
-background-color:green;
-height:30%;
+#b1{
+width:25%;
+opacity:.8;
+background:transparent;
+height:25%;
 }
+
+
 
 
 </style>
 </head>
 <body>
 
-<div id="butterfly">
+
+
+<div id="b1">
+xg
+</div>
+
+<div class="b1 b2">
+fg
+</div>
+
+<div class="b1 b3">
+tccccccccccc
+</div>
+
+<div class="b1 b4">
+tccccccccccc
+</div>
+
+
+<div class="butterfly">
+<div class="hover-container">
 <div id="nose">
 <div class="n nl"><spam>@</spam></div>
 <div class="n nr"><spam>@</spam></div>
@@ -276,7 +325,7 @@ height:30%;
 <div class="main">
 
 <div class="wing l" id="left"><br/><br/><br/><spam>~ ~<spam></div>
-<div class="center"><spam>o o</spam></div>
+<div class="center"><spam>  </spam></div>
 <div class="wing r" id="right"><br/><br/><br/><spam>~ ~<spam></div>
 
 </div>
@@ -286,24 +335,16 @@ height:30%;
 <div class="main m2">
 
 <div class="wing bl" id="left"><br/><br/><br/><spam>~ ~<spam></div>
-<div class="center cb"><br/><spam>-</spam><br/><spam>-</spam><br/><spam>-</spam><br/><br/><br/><spam>* *</spam></div>
+<div class="center cb"></div>
 <div class="wing br" id="right"><br/><br/><br/><spam>~ ~<spam></div>
 
 
 </div>
-
 </div>
-
-<div id="fotter">
-
-<marquee behavior="alternate" style="font-size:50px;" >
-I am Butterfly
-</marquee>
-
-
 </div>
 
 
+<script src="script"></script>
 
 </body>
 <html>
