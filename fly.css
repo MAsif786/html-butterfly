@@ -1,0 +1,371 @@
+
+
+*{
+margin:0;
+
+}
+
+body{   
+	    background: rgb(30,87,153); /* Old browsers */
+    background: linear-gradient(to bottom, rgba(67,107,153,1) 0%,rgba(139,173,201,1) 47%,rgba(252,252,252,1) 66%,rgba(178,224,177,1) 69%,rgba(90,122,86,1) 100%);
+    
+	height: 100%;
+    
+	perspective: 800px;
+	-webkit-perspective: 800px;
+    
+	transform-origin: center center;    
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+	
+    overflow: hidden;
+}
+ 
+.hover-container{
+
+  position:absolute ;
+
+
+
+}
+
+ .container {
+background-color:red;
+    animation: walk 3s linear infinite alternate;    
+	-webkit-animation: walk 3s linear infinite alternate;
+	-moz-animation: walk 3s linear infinite alternate;
+ 
+ 	transform:rotateX(-90deg)  scale(0.3);
+	-webkit-transform:rotateX(-90deg)  scale(0.3);
+	-moz-transform:rotateX(-90deg)  scale(0.3);
+	
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    overflow: visible;
+	position: absolute;
+	top:0px; left:500px;
+	
+	
+	  transition:
+    top 3s cubic-bezier(.34,.63,.26,.94),
+    left 3s cubic-bezier(.34,.63,.26,.94),
+    transform 1s linear;
+	
+}
+
+	@-webkit-keyframes walk {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    10% {
+        margin-top: 11px;
+        margin-left: -4px;
+    }
+    20% {
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+    30% {
+        margin-top: 23px;
+        margin-left: -4px;
+    }
+    40% {
+        margin-top: 3px;
+        margin-left: -14px;
+    }
+    50% {
+        margin-top: -6px;
+        margin-left: 4px;
+    }
+    60% {
+        margin-top: -18px;
+        margin-left: 26px;
+    }
+    70% {
+        margin-top: -13px;
+        margin-left: 10px;
+    }
+    80% {
+        margin-top: 1px;
+        margin-left: 15px;
+    }
+    90% {
+        margin-top: 6px;
+        margin-left: 2px;
+    }
+    100% {
+        margin-top: 12px;
+        margin-left: -4px;
+    }
+
+}
+  
+	@-moz-keyframes walk {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    10% {
+        margin-top: 11px;
+        margin-left: -4px;
+    }
+    20% {
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+    30% {
+        margin-top: 23px;
+        margin-left: -4px;
+    }
+    40% {
+        margin-top: 3px;
+        margin-left: -14px;
+    }
+    50% {
+        margin-top: -6px;
+        margin-left: 4px;
+    }
+    60% {
+        margin-top: -18px;
+        margin-left: 26px;
+    }
+    70% {
+        margin-top: -13px;
+        margin-left: 10px;
+    }
+    80% {
+        margin-top: 1px;
+        margin-left: 15px;
+    }
+    90% {
+        margin-top: 6px;
+        margin-left: 2px;
+    }
+    100% {
+        margin-top: 12px;
+        margin-left: -4px;
+    }
+
+}
+  
+
+.main{
+
+width:auto;
+height:auto;
+background-color:balck;
+
+}
+
+.m2{
+margin-top:-10px;
+}
+
+#nose{
+width:545px;
+height:140px;
+}
+
+.n{
+margin-left:12px;
+float:left;
+height:140px;
+width:245px;
+border-right:5px solid black;
+border-radius:0px 80px 0 0;
+text-align:right;
+font-size:30px;
+}
+
+
+.n spam{
+margin-right:50px;
+background-color:black;
+border-radius:100px;
+}
+
+.nr spam{
+margin-left:50px;
+background-color:black;
+border-radius:100px;
+}
+
+.nr{
+text-align:left;
+border-radius:80px 0px 0 0;
+border-right:0px solid black;
+border-left:5px solid black;
+}
+
+.center{
+border:2.5px solid black;
+text-align:center;
+font-size:30px;
+color:white;
+margin:0px -5px ;
+height:50px;
+float:left;
+width:55px;
+background-color:black;
+border-radius:100px;
+padding:0px;
+
+}
+
+.cb{
+margin:0 ;
+color:black;
+margin-top:-110px;
+width:40px;
+height:260px;
+
+}
+
+    .wing {
+
+border:2px solid black;
+color:red;
+text-align:center;
+height:220px;
+width:235px;
+background-color:coral;
+border-radius: 50% 177%;
+float:left;
+}
+
+#left{
+-webkit-transform-origin: right center;
+-moz-transform-origin: right center;
+transform-origin: right center;
+    
+	-webkit-animation: leftw 0.4s linear infinite alternate;
+	-moz-animation: leftw 0.4s linear infinite alternate;
+	animation: leftw 0.4s linear infinite alternate;
+	
+    transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+
+
+    @-webkit-keyframes leftw {
+    0% {
+        -webkit-transform: rotateY(-60deg);
+    }
+    100% {
+        -webkit-transform: rotateY(60deg);
+    }
+}
+
+    @-moz-keyframes leftw {
+    0% {
+        -moz-transform: rotateY(-60deg);
+    }
+    100% {
+        -moz-transform: rotateY(60deg);
+    }
+}
+
+
+	@keyframes leftw {
+    0% {
+        transform: rotateY(-60deg);
+    }
+    100% {
+        transform: rotateY(60deg);
+    }
+}
+    
+  
+	
+	#right{
+	transform-origin: left center;	
+	-webkit-transform-origin: left center;
+	-moz-transform-origin: left center;
+    
+	animation: rightw 0.4s linear infinite alternate;
+	-webkit-animation: rightw 0.4s linear infinite alternate;
+	-moz-animation: rightw 0.4s linear infinite alternate;
+	
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+
+}
+
+
+
+    @-webkit-keyframes rightw {
+    0% {
+        -webkit-transform: rotateY(60deg);
+    }
+    100% {
+        -webkit-transform: rotateY(-60deg);
+    }
+    }
+	
+	
+    @-moz-keyframes rightw {
+    0% {
+        -webkit-transform: rotateY(60deg);
+    }
+    100% {
+        -webkit-transform: rotateY(-60deg);
+    }
+    }
+	
+	    @keyframes rightw {
+    0% {
+        transform: rotateY(60deg);
+    }
+    100% {
+        transform: rotateY(-60deg);
+    }
+    }
+	
+	
+	
+	
+	
+.wing spam{
+font-size:45px;
+color:skyblue;
+background-color:black;
+border-radius:35px 150px 35px 150px;
+} 
+
+.r{
+border-radius: 150px 35px 150px 35px ;
+}
+
+.r spam{
+border-radius: 150px 35px 150px 35px ;
+}
+
+.bl{width:230px;
+height:180px;
+border-radius: 150px 35px 150px 35px;
+margin-left:5px;
+}
+
+.br{
+width:230px;
+height:180px;
+border-radius:35px 150px 35px 150px;
+
+}
+
+
+.bl spam{
+border-radius:35px 150px 35px 150px;
+}
+
+#b1{
+width:25%;
+opacity:.8;
+background:transparent;
+height:25%;
+}
+
+
+
