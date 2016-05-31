@@ -5,6 +5,5 @@
 ***
 
 * Now I am trying to Upgrade this..
-* I am some changing here is that..
-control Butterfly with Buttons.
-
+* I am control 3D Butterfly with buttons.
+![3D Butterfly control with buttons](https://github.com/MAsif786/html-butterfly/blob/master/Untitled.png?raw=true)
