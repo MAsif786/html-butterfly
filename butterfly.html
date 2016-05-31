@@ -4,19 +4,99 @@
 <head>
 
 <title>3D-Butterfly In CSS HTML</title>
-
+<meta charset="utf-8">
 
 <link href="fly.css" rel="stylesheet">
 <link href="controler.css" rel="stylesheet">
- <script src="vendor/prefixfree.min.js"></script>
+<script src="jquery-2.2.4.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+	
+var butterfly ='<div class="container"></div>';
+
+	$("#gZone").append(butterfly);
+
+	$(".container,#controls").hide();
+
+	
+		$("#start").click(function(){
+	
+		$(".container,#controls").show('slow');
+		$(this).hide('slow');
+
+	});
+	
+
+				
+	$("#t").click(function(){
+	
+		$(".container").animate({
+		
+		top: '-=100px',
+		
+		},'fast');
+
+	});
+
+	$("#l").click(function(){
+	
+		$(".container").animate({
+		
+		left: '-=150px',
+		
+		},'50');
+
+	});	
+	
+	
+	$("#r").click(function(){
+	
+		$(".container").animate({
+		
+		left: '+=150px',
+		
+		},'50');
+
+	});
+	
+	$("#b").click(function(){
+	
+		$(".container").animate({
+		
+		top: '+=100px',
+		
+		},'fast');
+
+	});
+	$("#dragg").draggable();
+});
+
+
+</script> 
+
+<style>
+
+#gZone{
+width:100%;
+height:400px;
+border:2px solid black;
+}
+
+
+
+</style>
+
 </head>
 <body>
 
-
+<div id="gZone"></div>
 
 
 
 <div class="container">
+
 <div class="hover-container">
 <div id="nose">
 <div class="n nl"><spam>@</spam></div>
@@ -42,28 +122,35 @@
 
 </div>
 </div>
+
+</div>
+
+
+
+
+
+<div id="dragg" class="circle">
+
+<div id="controls">
+<br/>
+<button id="t">UP</button><br/>
+
+<button id="l">LEFT</button>
+
+<button id="r">RIGHT</button><br/>
+
+<button id="b">DOWN</button>
+
+</div>
+
+<button id="start">Start</button>
+
+
 </div>
 
 
 
-<div id="footer">
-<div id="cover">
-<center>
-<button type="button"  onclick="up()">UP</button><br/>
-
-<button type="button"  onclick="left()">LEFT</button>
-
-<button type="button"  onclick="right()">RIGHT</button><br/>
-
-<button type="button"  onclick="down()">DOWN</button>
 
 
-</center>
-</div>
-
-
-</div>
-
-<script src="script.js"></script>
 </body>
 <html>

@@ -2,7 +2,7 @@
 
 *{
 margin:0;
-
+padding:0;
 }
 
 body{   
@@ -22,30 +22,27 @@ body{
 }
  
 .hover-container{
-
-  position:absolute ;
-
+    animation: walk 3s linear infinite alternate;    
+	-webkit-animation: walk 3s linear infinite alternate;
+	-moz-animation: walk 3s linear infinite alternate;
+width:auto;
 
 
 }
 
  .container {
-background-color:red;
-    animation: walk 3s linear infinite alternate;    
-	-webkit-animation: walk 3s linear infinite alternate;
-	-moz-animation: walk 3s linear infinite alternate;
+
  
  	transform:rotateX(-90deg)  scale(0.3);
 	-webkit-transform:rotateX(-90deg)  scale(0.3);
 	-moz-transform:rotateX(-90deg)  scale(0.3);
+
 	
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
-    overflow: visible;
-	position: absolute;
-	top:0px; left:500px;
-	
-	
+
+position:absolute;
+left:29%;
 	  transition:
     top 3s cubic-bezier(.34,.63,.26,.94),
     left 3s cubic-bezier(.34,.63,.26,.94),
